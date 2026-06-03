@@ -1,0 +1,446 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+<meta charset="UTF-8">
+
+<meta name="viewport"
+content="width=device-width, initial-scale=1.0">
+
+<title>Signal Hunter</title>
+
+<link rel="stylesheet"
+href="style.css">
+
+<!-- RETRO FONTS -->
+
+<link href="https://fonts.googleapis.com/css2?family=Press+Start+2P&family=VT323&display=swap"
+rel="stylesheet">
+
+</head>
+
+<body>
+
+<!-- STARFIELD -->
+
+<div id="stars"></div>
+
+<!-- CRT OVERLAY -->
+
+<div class="crt"></div>
+
+<!-- BOOT SCREEN -->
+
+<div id="bootScreen">
+
+<h1 class="bootTitle">
+
+SIGNAL HUNTER
+
+</h1>
+
+<p id="bootText">
+
+BOOTING SYSTEM...
+
+</p>
+
+<div class="bootBar">
+
+<div id="bootProgress"></div>
+
+</div>
+
+</div>
+
+<!-- PLAYER LOGIN -->
+
+<div id="playerScreen"
+class="screen hidden">
+
+<h1 class="gameTitle">
+
+SIGNAL HUNTER
+
+</h1>
+
+<p class="subtitle">
+
+A mysterious transmission
+has been detected.
+
+</p>
+
+<p class="subtitle">
+
+ENTER COMMANDER NAME
+
+</p>
+
+<input
+type="text"
+id="playerName"
+placeholder="Commander">
+
+<button id="startBtn">
+
+INITIALIZE MISSION
+
+</button>
+
+</div>
+
+<!-- MAIN GAME -->
+
+<div class="container hidden">
+
+<!-- TOP BAR -->
+
+<div class="topBar">
+
+<button id="themeBtn">
+
+◐
+
+</button>
+
+</div>
+
+<!-- TITLE -->
+
+<h1 class="gameTitle">
+
+SIGNAL HUNTER
+
+</h1>
+
+<p id="welcome">
+
+WELCOME COMMANDER
+
+</p>
+
+<!-- MISSION -->
+
+<div class="missionBox">
+
+<h3>
+
+MISSION BRIEF
+
+</h3>
+
+<p>
+
+Locate the hidden signal before
+the transmission window closes.
+
+Press ENTER to scan.
+
+</p>
+
+</div>
+
+<!-- HUD -->
+
+<div class="hud">
+
+<div class="card">
+
+<h4>
+
+⚡ POWER
+
+</h4>
+
+<span id="lives">
+
+5
+
+</span>
+
+</div>
+
+<div class="card">
+
+<h4>
+
+📡 WINDOW
+
+</h4>
+
+<span id="timer">
+
+30
+
+</span>
+
+</div>
+
+<div class="card">
+
+<h4>
+
+💾 CREDITS
+
+</h4>
+
+<span id="score">
+
+0
+
+</span>
+
+</div>
+
+</div>
+
+<!-- DIFFICULTY -->
+
+<select id="difficulty">
+
+<option value="easy">
+
+EASY SECTOR
+
+</option>
+
+<option value="medium">
+
+MEDIUM SECTOR
+
+</option>
+
+<option value="hard">
+
+DEEP SPACE
+
+</option>
+
+</select>
+
+<!-- SCANNER -->
+
+<div class="scannerBox">
+
+<h3>
+
+ENTER COORDINATES
+
+</h3>
+
+<input
+type="number"
+id="guess"
+placeholder="> _"
+autocomplete="off">
+
+<p id="message">
+
+SYSTEM READY
+
+</p>
+
+</div>
+
+<!-- RADAR -->
+
+<div class="radarBox">
+
+<h3>
+
+TARGET PROXIMITY
+
+</h3>
+
+<div class="radarBar">
+
+<div id="radarFill"></div>
+
+</div>
+
+<p id="signalStrength">
+
+0%
+
+</p>
+
+</div>
+
+<!-- DIRECTION -->
+
+<div class="directionBox">
+
+<h3>
+
+SIGNAL ANALYSIS
+
+</h3>
+
+<p id="directionText">
+
+AWAITING SCAN
+
+</p>
+
+</div>
+
+<!-- SCAN LOG -->
+
+<div class="historyBox">
+
+<h3>
+
+SCAN LOG
+
+</h3>
+
+<div id="history">
+
+NO SCANS YET
+
+</div>
+
+</div>
+
+<!-- PROFILE -->
+
+<div class="profileBox">
+
+<h3>
+
+COMMANDER RECORD
+
+</h3>
+
+<p>
+
+MISSIONS:
+<span id="gamesPlayed">
+
+0
+
+</span>
+
+</p>
+
+<p>
+
+SUCCESS:
+<span id="wins">
+
+0
+
+</span>
+
+</p>
+
+<p>
+
+BEST SCORE:
+<span id="highScore">
+
+0
+
+</span>
+
+</p>
+
+</div>
+
+<!-- ACHIEVEMENTS -->
+
+<div class="achievementBox">
+
+<h3>
+
+ACHIEVEMENTS
+
+</h3>
+
+<ul id="achievementList">
+
+<li>FIRST CONTACT</li>
+
+<li>SIGNAL MASTER</li>
+
+<li>LUCKY SCAN</li>
+
+<li>SURVIVOR</li>
+
+</ul>
+
+</div>
+
+</div>
+
+<!-- WIN MODAL -->
+
+<div id="winModal"
+class="modal hidden">
+
+<div class="modalContent">
+
+<h2>
+
+TRANSMISSION LOCKED
+
+</h2>
+
+<p>
+
+SIGNAL ACQUIRED
+
+</p>
+
+<p>
+
++100 CREDITS
+
+</p>
+
+<button id="playAgain">
+
+NEXT MISSION
+
+</button>
+
+</div>
+
+</div>
+
+<!-- LOSE MODAL -->
+
+<div id="loseModal"
+class="modal hidden">
+
+<div class="modalContent">
+
+<h2>
+
+SIGNAL LOST
+
+</h2>
+
+<p>
+
+MISSION FAILED
+
+</p>
+
+<button id="retryBtn">
+
+RETRY
+
+</button>
+
+</div>
+
+</div>
+
+<script src="script.js"></script>
+
+</body>
+
+</html>
