@@ -55,6 +55,8 @@ Signal-Hunter/
 
 <img width="1365" height="573" alt="image" src="https://github.com/user-attachments/assets/82fa387b-d805-4e1f-aefc-197ce073e742" />
 
+<img width="1365" height="597" alt="image" src="https://github.com/user-attachments/assets/edb2ee49-8dba-482d-8cb1-f78b58be680d" />
+
 ## 📚 What I Learned
 
 * DOM Manipulation
