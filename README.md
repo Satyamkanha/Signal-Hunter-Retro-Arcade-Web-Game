@@ -45,8 +45,15 @@ Signal-Hunter/
 
 ## 📸 Screenshots
 
+<img width="1365" height="592" alt="image" src="https://github.com/user-attachments/assets/411cc41d-960c-4df6-91da-dcc54884643a" />
+
 <img width="1348" height="599" alt="image" src="https://github.com/user-attachments/assets/0904973b-04c1-455f-90c3-287849074ad8" />
 
+<img width="1361" height="599" alt="image" src="https://github.com/user-attachments/assets/5fd5297a-950e-4a2f-a204-a47f264b538f" />
+
+<img width="1365" height="573" alt="image" src="https://github.com/user-attachments/assets/0daf915c-8e12-49da-9c17-db902956b5e7" />
+
+<img width="1365" height="573" alt="image" src="https://github.com/user-attachments/assets/82fa387b-d805-4e1f-aefc-197ce073e742" />
 
 ## 📚 What I Learned
 
